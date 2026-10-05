@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, BookOpen, ShieldCheck, Scale, User } from 'lucide-react';
 import { FIRM_DETAILS } from '../data/legalData';
+import advocateChamberMeetingImg from '../assets/images/advocate_chamber_meeting_1791199881782.jpg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -24,7 +25,7 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-[8px] overflow-hidden border border-stone-200 shadow-md">
               <img
-                src="/src/assets/images/advocate_chamber_meeting_1791199881782.jpg"
+                src={advocateChamberMeetingImg}
                 alt="Chebet & Mariita Advocates conference and consultation desk"
                 className="w-full h-80 sm:h-96 object-cover object-center"
                 referrerPolicy="no-referrer"

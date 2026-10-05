@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, Calendar, Star, MapPin, CheckCircle2 } from 'lucide-react';
 import { FIRM_DETAILS } from '../data/legalData';
+import heroChambersImg from '../assets/images/hero_law_chambers_1791199871463.jpg';
 
 interface HeroProps {
   onOpenConsultationModal: (topic?: string) => void;
@@ -12,7 +13,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultationModal }) => {
       {/* Background with measured contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_law_chambers_1791199871463.jpg"
+          src={heroChambersImg}
           alt="Chebet & Mariita Advocates law chamber library and consultation desk"
           className="w-full h-full object-cover object-center opacity-25 filter brightness-95"
           referrerPolicy="no-referrer"
