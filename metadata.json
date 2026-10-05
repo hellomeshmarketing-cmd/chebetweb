@@ -1,0 +1,6 @@
+{
+  "name": "Chebet & Mariita Advocates",
+  "description": "Trusted legal representation in Kisii, Kenya. Specializing in land disputes, succession & probate, criminal defence, commercial litigation, and will writing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
