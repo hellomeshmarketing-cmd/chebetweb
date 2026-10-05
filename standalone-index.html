@@ -238,14 +238,15 @@
       position: relative;
       background-color: var(--primary-navy);
       color: #fff;
-      padding: 3.5rem 0 4.5rem;
+      padding: 2.75rem 0 3.75rem;
       overflow: hidden;
+      text-align: center;
     }
 
     .hero-bg-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(11, 31, 58, 0.97) 0%, rgba(11, 31, 58, 0.85) 100%);
+      background: linear-gradient(180deg, rgba(11, 31, 58, 0.98) 0%, rgba(11, 31, 58, 0.92) 100%);
       z-index: 1;
     }
 
@@ -253,50 +254,72 @@
       position: relative;
       z-index: 2;
       max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .hero-kicker {
-      font-size: 0.85rem;
+      font-size: 0.78rem;
       font-weight: 600;
       color: var(--accent-gold);
       margin-bottom: 1rem;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(201, 162, 75, 0.25);
+      border-radius: 9999px;
     }
 
     .hero-title {
-      font-size: 2.25rem;
+      font-size: 1.85rem;
       font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
       text-wrap: balance;
     }
 
     .hero-subtitle {
-      font-size: 1.1rem;
+      font-size: 0.95rem;
       color: #E2E8F0;
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
       font-weight: 400;
       line-height: 1.6;
+      max-width: 580px;
     }
 
     .hero-actions {
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 2.25rem;
+      flex-direction: column;
+      width: 100%;
+      max-width: 380px;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-actions .btn-gold,
+    .hero-actions .btn-outline-white {
+      width: 100%;
+      justify-content: center;
+      padding: 0.8rem 1.25rem;
+      font-size: 0.9rem;
     }
 
     /* Trust Strip: Zero-pill discipline */
     .trust-strip {
-      padding-top: 1.5rem;
+      width: 100%;
+      padding-top: 1.25rem;
       border-top: 1px solid rgba(255, 255, 255, 0.15);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 0.75rem 1rem;
-      font-size: 0.875rem;
+      justify-content: center;
+      gap: 0.6rem 0.85rem;
+      font-size: 0.8rem;
       color: #CBD5E1;
     }
 
@@ -815,8 +838,43 @@
 
     /* Responsive Breakpoints */
     @media (min-width: 640px) {
+      .hero-section {
+        padding: 4rem 0 5rem;
+        text-align: left;
+      }
+      .hero-bg-overlay {
+        background: linear-gradient(135deg, rgba(11, 31, 58, 0.97) 0%, rgba(11, 31, 58, 0.85) 100%);
+      }
+      .hero-content {
+        align-items: flex-start;
+        margin: 0;
+      }
+      .hero-kicker {
+        font-size: 0.85rem;
+        padding: 0;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        justify-content: flex-start;
+      }
       .hero-title {
         font-size: 3.25rem;
+        line-height: 1.15;
+      }
+      .hero-subtitle {
+        font-size: 1.15rem;
+      }
+      .hero-actions {
+        flex-direction: row;
+        width: auto;
+        max-width: none;
+      }
+      .hero-actions .btn-gold,
+      .hero-actions .btn-outline-white {
+        width: auto;
+      }
+      .trust-strip {
+        justify-content: flex-start;
       }
       .advocate-card {
         flex-direction: row;
